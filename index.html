@@ -1,0 +1,89 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>START Agency</title>
+  <!-- Подключаем современный шрифт Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&display=swap" rel="stylesheet">
+  <style>
+    /* Общие стили */
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000000;
+      color: #FFD700;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    h1 {
+      font-size: 4rem;
+      font-weight: 900;
+      margin: 0.5em 0;
+    }
+    p {
+      margin: 0.3em 0;
+      font-size: 1.2rem;
+    }
+    .payment-container {
+      background-color: #111;
+      padding: 2em;
+      border-radius: 1em;
+      box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+      width: 320px;
+      margin: 1.5em auto 0;
+      text-align: left;
+    }
+    .payment-container h2 {
+      margin: 0 0 1em;
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-align: center;
+    }
+    .card-input {
+      width: 100%;
+      padding: 0.8em;
+      margin-bottom: 1em;
+      font-size: 1rem;
+      border: 1px solid #555;
+      border-radius: 0.5em;
+      background-color: #222;
+      color: #FFD700;
+    }
+    .details {
+      display: flex;
+      justify-content: space-between;
+    }
+    .details input {
+      width: 48%;
+      padding: 0.6em;
+      font-size: 1rem;
+      border: 1px solid #555;
+      border-radius: 0.5em;
+      background-color: #222;
+      color: #FFD700;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>START</h1>
+    <p>Добропожаловать в наше маркетинговое агентство START</p>
+    <p>Чтобы попасть в закрытый клуб необходимо приобрести подписку</p>
+    <!-- Окно оплаты вместо кнопки -->
+    <div class="payment-container">
+      <h2>Оплата подписки</h2>
+      <input type="text" class="card-input" placeholder="Номер карты" maxlength="19" />
+      <div class="details">
+        <input type="text" placeholder="MM/YY" maxlength="5" />
+        <input type="text" placeholder="CVV" maxlength="3" />
+      </div>
+    </div>
+  </div>
+</body>
+</html>
